@@ -4,14 +4,13 @@ require "date"
 $tickets_list = []
 
 email = {
-  title: "Career Services Sprint Update",
+  title: "Talent Acquisition Sprint Update",
   sprint_end_date: "#{(Time.now).strftime("%B")} #{Time.now.day}, #{Time.now.year}",
-  edito: "“Hi everybody,<br>This week, we'll have Sacha, Vlatka and Florent working on the sprint.<br>Have a nice day !“<br><br>Christophe and Laurent",
-  witty_comment: "Thomas P. “Tu quoque mi fili“",
+  edito: "Kudos to Oksana, Marina, Fabien, Lancelot and Sophie for the great work this week!",
   first_section: {
-    title: "Tickets delivered during last sprint",
-    statuses: ['DONE'],
-    file: 'last_sprint.txt',
+    title: "Jobs & Credits",
+    statuses: ['DONE', 'CLOSED'],
+    file: 'jobs_credits.txt',
     new_features: {
       type: "New Feature",
       nb_tickets: 0,
@@ -34,9 +33,9 @@ email = {
     },
   },
   second_section: {
-    title: "Tickets not delivered during last sprint (will be transferred to next sprint)",
-    statuses: ['TO DO','IN DEV','TECH REVIEW','FUNCTIONAL REVIEW', 'READY FOR RELEASE'],
-    file: 'last_sprint.txt',
+    title: "Company Pages",
+    statuses: ['DONE', 'CLOSED'],
+    file: 'company_pages.txt',
     new_features: {
       type: "New Feature",
       nb_tickets: 0,
@@ -59,9 +58,34 @@ email = {
     },
   },
   third_section: {
-    title: "Other tickets planned for next sprint",
-    statuses: ['TO DO','IN DEV','TECH REVIEW','FUNCTIONAL REVIEW', 'READY FOR RELEASE','DONE'],
-    file: 'next_sprint.txt',
+    title: "Crawlers",
+    statuses: ['DONE', 'CLOSED'],
+    file: 'crawlers.txt',
+    new_features: {
+      type: "New Feature",
+      nb_tickets: 0,
+      tickets: []
+    },
+    improvements: {
+      type: "Improvement",
+      nb_tickets: 0,
+      tickets: []
+    },
+    tasks: {
+      type: "Task",
+      nb_tickets: 0,
+      tickets: []
+    },
+    bugs: {
+      type: "Bug",
+      nb_tickets: 0,
+      tickets: []
+    }
+  },
+  fourth_section: {
+    title: "Technical",
+    statuses: ['DONE', 'CLOSED'],
+    file: 'technical.txt',
     new_features: {
       type: "New Feature",
       nb_tickets: 0,
@@ -86,7 +110,7 @@ email = {
 }
 
 def section_looper(email)
-  section = [:first_section, :second_section, :third_section]
+  section = [:first_section, :second_section, :third_section, :fourth_section]
   section.each do |section|
     type_looper(email, section)
   end
@@ -130,12 +154,17 @@ puts email
 @email = email
 #puts mail_builder()
 
+@nb_new_features = @email[:first_section][:new_features][:nb_tickets] + @email[:second_section][:new_features][:nb_tickets] + @email[:third_section][:new_features][:nb_tickets] + @email[:fourth_section][:new_features][:nb_tickets]
+@nb_bugs = @email[:first_section][:bugs][:nb_tickets] + @email[:second_section][:bugs][:nb_tickets] + @email[:third_section][:bugs][:nb_tickets] + @email[:fourth_section][:bugs][:nb_tickets]
+@nb_improvements = @email[:first_section][:improvements][:nb_tickets] + @email[:second_section][:improvements][:nb_tickets] + @email[:third_section][:improvements][:nb_tickets] + @email[:fourth_section][:improvements][:nb_tickets]
+@nb_tasks = @email[:first_section][:tasks][:nb_tickets] + @email[:second_section][:tasks][:nb_tickets] + @email[:third_section][:tasks][:nb_tickets] + @email[:fourth_section][:tasks][:nb_tickets]
+
 # render template
 template = File.read('./template.html.erb')
 result = ERB.new(template).result(binding)
 
 # write result to file
 # File.open('filename.html', 'w+') do |f|
-File.open('filename.html', 'w+') do |f|
+File.open('sprint_update.html', 'w+') do |f|
   f.write result
 end
