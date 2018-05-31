@@ -1,0 +1,5 @@
+JT-7662 *	[JOsearch] Link job card to company page only if the company page is active	Bug	Normal (SHOULD)	CLOSED	- → 2
+JT-7607	[Algolia][JOsearch] Manage error "Object size too big" the same way as jobs (before re-indexing all companies)	Task	Normal (SHOULD)	CLOSED	2
+JT-7643 *	[TACHE RAKE][CCare]Bpifrance Assurance Export / modification Permalink	Task	Important (MUST)	CLOSED	- → 1
+JT-7644 *	[DUE-DATE : 03/05][TACHE RAKE][CCare] Changement url SFR	Task	Important (MUST)	CLOSED	- → 1
+JT-7656 *	[CI] on jobteaser.com/de when not logged in, only English or German company pages should appear	Bug	Normal (SHOULD)	CLOSED	- → 1

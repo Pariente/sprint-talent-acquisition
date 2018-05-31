@@ -1,0 +1,11 @@
+JT-7615	[Crawler] Switch to Sidekiq	Improvement	Normal (SHOULD)	RELEASED	5
+JT-7359 *	[CCare] Delete BO nielsen-service-france and TeamLeader duplicate	Task	Important (MUST)	RELEASED	1
+JT-7672 *	[Multiposter] Répondre à l'email de SmashFly	Task	Normal (SHOULD)	CLOSED	- → 1
+JT-7622	[translations] portugais fonction "Audiovisuel" => "Audiovisual"	Task	Normal (SHOULD)	CLOSED	- → 1
+JT-7634	Accountant role : Impossible to click on "configuration"	Bug	Important (MUST)	CLOSED	2
+JT-7638	When signing up from jobteaser.com/de, do not redirect to jobteaser.com/fr	Bug	Important (MUST)	CLOSED	3 → 2
+JT-7639	Missing German in website languages (profile configuration)	Bug	Important (MUST)	CLOSED	- → 1
+JT-7640 *	[GDPR] Remove "nationality" field from user table	Task	Normal (SHOULD)	CLOSED	- → 2
+JT-7647 *	[SCHO] Update Polish functions translations	Task	Normal (SHOULD)	CLOSED	- → 1
+JT-7650 *	Remove temporary rate limits for luiss mobile app	Bug	Important (MUST)	CLOSED	- → 1
+JT-7652 *	[SCHO][Translations] Public functions in Polish should have the same active / inactive status as in French	Task	Normal (SHOULD)	CLOSED	- → 1

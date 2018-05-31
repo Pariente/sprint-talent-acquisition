@@ -1,0 +1,9 @@
+JT-7586	[API Multiposter] Allow Multiposting to automatically publish on slots	Improvement	Normal (SHOULD)	CLOSED	3
+JT-7594	[JOsearch] Sortir la liste des filtres utilisés dont la traduction n'est pas gérée dans phrase app	Task	Normal (SHOULD)	CLOSED	1
+JT-7637	[SCHO] ESSEC - Apprentissage offers don't appear on CSV export	Bug	Important (MUST)	CLOSED	2
+JT-7649 *	[CCare] Integrate SmartRecruiters account for CGG	Task	Normal (SHOULD)	CLOSED	- → 2
+JT-7669 *	[TACHE RAKE][CCare] Kill 8 internship credits for Neovia	Task	Important (MUST)	RELEASED	- → 1
+JT-7665 *	[TACH RAKE][CCARE] Arkeance - Delete job slot	Task	Important (MUST)	CLOSED	- → 1
+JT-7657 *	[TACHE RAKE][CCare] Delete all Euris credits	Task	Important (MUST)	RELEASED	- → 1
+JT-7660 *	[TACHE RAKE][CCare] Delete 10 credits for Faurecia	Task	Important (MUST)	CLOSED	- → 1
+JT-7645 *	[TACHE RAKE][CCare]Kill credits Credit Foncier	Task	Important (MUST)	RELEASED	- → 1

@@ -1,0 +1,4 @@
+JT-7668 *	[Crawler] Several crawlers down	Bug	Normal (SHOULD)	CLOSED	- → 1
+JT-7663 *	[Crawlers] Several crawlers down	Bug	Normal (SHOULD)	CLOSED	1
+JT-7619 *	[Crawler] See if Amazon EMEA website can be crawled	Task	Normal (SHOULD)	CLOSED	- → 1
+JT-7653 *	[Crawler] create Amazon EMEA crawler	Task	Normal (SHOULD)	CLOSED	1 → 2
